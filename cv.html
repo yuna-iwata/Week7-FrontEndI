@@ -4,48 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>My test page</title>
-    <style>
-    .doc {
-    width: 700px;
-    padding: 20px;
-    border: 5px solid pink;
-    margin: 20px;
-    background-color: #F2F5F4; 
-    background-image: url(blue-snow.webp)
-    }
-    .flex-container {
-    display: flex;
-    }
-
-    .flex-child {
-    flex: 1;
-    /* border: 2px solid #9698CD; */
-    padding: 5px;
-    }  
-
-    .flex-child:first-child {
-    margin-right: 20px;
-    } 
-    </style>
+    <link rel="stylesheet" href="cvstyles.css" />
   </head>
   <body>
     <div class="flex-container">
     <div class="doc">
     <h1>My CV</h1>
-    <div class="flex-container one">
-        <div class="flex-child photo">
+    <div class="flex-container">
+        <div class="flex-child">
             <img src="Princess_Peach_Stock_Art.png" alt="My test image" width="100" />
         </div>
-        <div class="flex-child contact">
-            <section>
+        <div class="flex-child">
                 <p>Email: peach@example.com</p>
                 <p>Telephone: 1234567890</p>
                 <p>Address: 1 peach</p>
-                <p>I am a motivated junior software developer blah</p>
-            </section>
+                <p id="statement-purpose">I am a motivated junior software developer blah</p>
         </div>
     </div>
-    <hr>
+    <hr >
     <section>
       <h2>Education</h2>
       <p>2007-2017 - Peach school</p>
@@ -54,21 +30,28 @@
     <hr>
     <section>
       <h2>Work Experience</h1>
-      <p>2015-2017 - Bartender</p>
+      <p><span class="dates">2015-2017</span> - Being Princess</p>
       <h3>Responsiblities</h2>
-      <li>mix and serve alc</li>
-      <li>interact w customers</li>
-      <li>assess customer needs</li>
-      <li>restock inventory</li>
-      <p>2015-2017 - Shopkeeper</p>
+      <li>ruling the mushroom kingdom</li>
+      <li>looking cute</li>
+      <li>being better than mario</li>
+      <li>period</li>
+      <p><span class="dates">2015-2017</span> - Shopkeeper</p>
       <h3>Responsiblities</h2>
       <li>take payments</li>
       <li>maintain receipts</li>
       <li>inspect deliveries</li>
     </section>
     <section>
-        <h2>Hobbies and Interests</h2>
-        <a href = "hobbies.html">See my Hobbies and Interests Page</a>
+        <h2>Friends and Enemies</h2>
+        <p> See my
+        <a href = "frenemies.html">
+            <button class="square">
+                Friends and Enemies
+            </button>
+        </a>
+         page </p> 
+
     </section>
     </div>
     </div>
