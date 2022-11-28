@@ -4,21 +4,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>My test page</title>
+    <style>
+    .doc {
+    width: 700px;
+    padding: 20px;
+    border: 5px solid pink;
+    margin: 20px;
+    background-color: #F2F5F4; 
+    background-image: url(blue-snow.webp)
+    }
+    .flex-container {
+    display: flex;
+    }
+
+    .flex-child {
+    flex: 1;
+    /* border: 2px solid #9698CD; */
+    padding: 5px;
+    }  
+
+    .flex-child:first-child {
+    margin-right: 20px;
+    } 
+    </style>
   </head>
   <body>
+    <div class="flex-container">
+    <div class="doc">
     <h1>My CV</h1>
-    <img src="Princess_Peach_Stock_Art.png" alt="My test image" width="100" />
-    <section>
-      <p>Email: peach@example.com</p>
-      <p>Telephone: 1234567890</p>
-      <p>Address: 1 peach</p>
-      <p>I am a motivated junior software developer blah</p>
-    </section>
+    <div class="flex-container one">
+        <div class="flex-child photo">
+            <img src="Princess_Peach_Stock_Art.png" alt="My test image" width="100" />
+        </div>
+        <div class="flex-child contact">
+            <section>
+                <p>Email: peach@example.com</p>
+                <p>Telephone: 1234567890</p>
+                <p>Address: 1 peach</p>
+                <p>I am a motivated junior software developer blah</p>
+            </section>
+        </div>
+    </div>
+    <hr>
     <section>
       <h2>Education</h2>
       <p>2007-2017 - Peach school</p>
       <p>11 GCSEs, 3 A Levels</p>
     </section>
+    <hr>
     <section>
       <h2>Work Experience</h1>
       <p>2015-2017 - Bartender</p>
@@ -37,5 +70,7 @@
         <h2>Hobbies and Interests</h2>
         <a href = "hobbies.html">See my Hobbies and Interests Page</a>
     </section>
+    </div>
+    </div>
   </body>
 </html>
